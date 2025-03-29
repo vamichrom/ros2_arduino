@@ -55,28 +55,28 @@ void resetPID()
   flPID.TargetTicksPerFrame = 0.0;
   flPID.Encoder = readEncoder(FL);
   flPID.PrevEnc = flPID.Encoder;
-  flPID.output = 0;
+  flPID.output = MIN_PWM;
   flPID.PrevInput = 0;
   flPID.ITerm = 0;
 
   frPID.TargetTicksPerFrame = 0.0;
   frPID.Encoder = readEncoder(FR);
   frPID.PrevEnc = frPID.Encoder;
-  frPID.output = 0;
+  frPID.output = MIN_PWM;
   frPID.PrevInput = 0;
   frPID.ITerm = 0;
 
   rlPID.TargetTicksPerFrame = 0.0;
   rlPID.Encoder = readEncoder(RL);
   rlPID.PrevEnc = rlPID.Encoder;
-  rlPID.output = 0;
+  rlPID.output = MIN_PWM;
   rlPID.PrevInput = 0;
   rlPID.ITerm = 0;
 
   rrPID.TargetTicksPerFrame = 0.0;
   rrPID.Encoder = readEncoder(RR);
   rrPID.PrevEnc = rrPID.Encoder;
-  rrPID.output = 0;
+  rrPID.output = MIN_PWM;
   rrPID.PrevInput = 0;
   rrPID.ITerm = 0;
 }
